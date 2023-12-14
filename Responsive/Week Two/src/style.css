@@ -1,0 +1,12 @@
+body {
+  background-color: plum;
+}
+a {
+  color: blueviolet;
+}
+a:hover {
+  text-transform: capitalize;
+}
+a:visited {
+  color: rgb(173, 40, 40);
+}
