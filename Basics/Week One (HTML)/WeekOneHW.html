@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Ap</title>
+    <style>
+      div {
+        text-align: center;
+      }
+      h1 {
+        color: #1a64d6;
+        text-align: center;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: normal;
+        line-height: 48px;
+        margin: 0px;
+      }
+      ul {
+        text-align: center;
+        list-style: none;
+        padding: 20px 0px 0px 0px;
+      }
+      li {
+        transition: all 80ms linear;
+        padding: 10px 0px;
+        font-size: 18px;
+      }
+      li:hover {
+        background-color: #fffbef;
+        margin: 0px 200px 0px 200px;
+        border-radius: 10px;
+      }
+
+      button {
+        display: block;
+        margin: 0px auto;
+        padding: 20px 25px;
+        color: #ffffff;
+        background-color: #1a64d6;
+        font-size: 15px;
+        box-shadow: 10px 10px 35px 0px rgb(152, 152, 152);
+        transition: all 150ms linear;
+        border-radius: 55px;
+        border: 2px solid #1a64d6;
+      }
+      button:hover {
+        color: #1a64d6;
+        background-color: #ffffff;
+        border: 2px solid #1a64d6;
+        cursor: pointer;
+      }
+      p {
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+        color: rgb(94, 93, 93);
+      }
+
+      .hightemp {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <div>&#x26C5;</div>
+      Currently 21&#176; in Tokyo
+    </h1>
+    <h2>13&#176; / <span class="hightemp"> 23&#176;</span></h2>
+    <ul>
+      <li>
+        <strong>&#x1F327; Tomorrow</strong>
+        <p>10&#176; &nbsp;/&nbsp; <span class="hightemp">22&#176;</span></p>
+      </li>
+      <br />
+      <li>
+        <strong>&#x1F325; Saturday</strong>
+        <p>15&#176; &nbsp;/&nbsp; <span class="hightemp">17&#176;</span></p>
+      </li>
+      <br />
+      <li>
+        <strong>&#x2600; Sunday</strong>
+        <p>25&#176; &nbsp;/&nbsp; <span class="hightemp">28&#176;</span></p>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <p>Coded by Diane Williston</p>
+  </body>
+</html>

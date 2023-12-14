@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="weather-app-main">
+        <h1 id="city">City</h1>
+        <div>
+          <h2>
+            "Nature does not hurry, <br />
+            everything is accomplished."<br />
+            –Lao Tzu
+          </h2>
+        </div>
+      </div>
+      <div class="weather-info">
+        <span id="time">Date and Time</span>
+        <br />
+        <span id="description">Description</span>
+        <br />
+        <span id="percipitation">Percipitation</span>
+        <span id="wind">Wind</span>
+        <br />
+        <span class="current-temp" id="currentTemp">Temp</span>
+        <span class="current-temp" id="weatherIcon">
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+            alt="Weather Icon"
+            class="current-temp"
+            width="40"
+        /></span>
+      </div>
+      Forecast
+      <form class="search-form" id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city"
+          required
+          class="search-box"
+          id="search-box"
+        />
+        <input type="submit" value="Search" class="search-button" />
+      </form>
+      <footer>
+        Coded by
+        <a href="https://github.com/dew-9" target="blank">Diane E Williston</a>;
+        Site is open-sourced on
+        <a href="https://github.com/dew-9/weatherapp2" target="blank">
+          GitHub</a
+        >
+        and hosted on
+        <a href="https://dew9weatherapp.netlify.app/" target="blank">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

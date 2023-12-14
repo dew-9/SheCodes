@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diane's Dogs</title>
+    <style>
+      body {
+        background: linear-gradient(#d1c4e9, #9ccc65);
+        font-family: Verdana;
+      }
+      h1 {
+        text-align: center;
+        color: #2e7d32;
+      }
+      h2 {
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        background-color: #658567;
+        line-height: 50px;
+        margin: 0px 100px;
+      }
+      p {
+        padding: 5px 100px 5px 100px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      li {
+        text-align: center;
+      }
+      div {
+        padding: 20px 0;
+        font-size: 25px;
+      }
+      hr {
+        width: 85%;
+        height: 6px;
+        background-color: #154618;
+      }
+      img {
+        border: 5px solid #154618;
+      }
+      em {
+        font-size: 20px;
+      }
+      span {
+        font-weight: bolder;
+      }
+      button {
+        display: block;
+        text-align: center;
+        margin: 0px auto 25px;
+        font-size: 30px;
+        color: #9ccc65;
+        background-color: #2e7d32;
+        border-color: #2e7d32;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 15px 15px 0;
+        transition: all 250ms ease-in-out;
+        padding: 15px 20px;
+        border-radius: 25px;
+      }
+      button:hover {
+        color: #2e7d32;
+        background-color: #cfd3ca;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Dogs</h1>
+    <h2>These are the two dogs that live in (run) my home:</h2>
+    <ul class="horizontal-list">
+      <li>
+        <strong><div>Nymeria</div></strong>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/243/original/PSX_20200523_122925.jpg?1695673083"
+          alt="White and black husky"
+          width="350"
+        />
+      </li>
+      <br />
+      <br />
+      <li>
+        <strong><div>Sigma</div></strong>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/244/original/PSX_20200523_122528.jpg?1695673132"
+          alt="Dutch shepherd x chow chow"
+          width="350"
+        />
+      </li>
+    </ul>
+    <hr />
+    <p>
+      <em> A little about them: </em>
+      <br />
+      Nymeria came from a breeder near Fergus, ON. Her birthday is October 28th
+      (2014). She is an energetic Siberian Husky who loves to run and play in
+      fields.
+      <br />
+      <br />
+      Sigma is a rescue from
+      <a
+        href="https://www.saveourscruff.org/available-dogs?gad=1&gclid=CjwKCAjwgsqoBhBNEiwAwe5w021o-5HWPpktfvEMCFd8bljrsEWMqxpkIlRq6p20Y-_CXCK22zk-XBoCfcsQAvD_BwE"
+        target="_blank"
+      >
+        Save Our Scruff</a
+      >. His birthday is estimated to be January 9th (2019). He is a Dutch
+      Shepherd x Chow Chow mix who loves cuddles with his family very much!
+    </p>
+    <hr />
+    <br />
+    <button>Name Story</button>
+    <span>Coded by Diane E Williston </span>
+    <br />
+    <script>
+      function story() {
+        let dogChoice = prompt("Which dog do you want to hear the story for?");
+        dogChoice = dogChoice.toLowerCase();
+        dogChoice = dogChoice.trim();
+        let p = document.querySelector("p");
+
+        if (dogChoice === "sigma") {
+          p.innerHTML =
+            "Sigma's name comes from a character in the game Overwatch that my husband and I like to play. Sigma is a Tank hero in the game. As a brilliant astrophysicist Sigma was considered a pioneer in his field. His life's work involved devising a way to harness the power of gravity. Equally known for his groundbreaking research and eccentric personality, he conducted most of his studies from his lab in the Hague.";
+        } else {
+          if (dogChoice === "nymeria") {
+            p.innerHTML =
+              "Nymeria's name comes from the show Game of Thrones. Nymeria was one of the illusive direwolves. The direwolf is an unusually large and intelligent species of wolf that inhabit Westeros. Nymeria was the only direwolf to survive the series. ";
+          } else {
+            alert("Please try again");
+          }
+        }
+      }
+
+      let nameStory = document.querySelector("button");
+      nameStory.addEventListener("click", story);
+    </script>
+  </body>
+</html>
